@@ -410,12 +410,15 @@ header {
 }
 
 .technique-cards-cont-item-3 {
-    background: url('/images/bg-3.png'),
+    background: url('./images/bg-3.png'),
     #ffff;
     background-position: right bottom;
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 12px;
+    clip-path: polygon(0 0, 100% 0, 100% 66%, 100% 100%, 15% 100%, 0 85%);
+
+
 }
 
 /* hero end */
@@ -431,11 +434,13 @@ header {
 }
 
 .center-form-cont {
-    background: url('/images/bg-4.png'),
+    background: url('./images/bg-4.png'),
     #212121; 
     padding: 30px;
     border-radius: 12px;
     margin-top: 60px;
+    clip-path: polygon(25% 0%, 100% 0, 100% 66%, 93% 100%, 0 100%, 0 0);
+
 }
 
 .center-form-cont h2 {
@@ -542,7 +547,7 @@ header {
 }
 
 .runtian-right {
-    background: url('/images/bg-6.png');
+    background: url('./images/bg-6.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -666,7 +671,7 @@ header {
 
 .custom-shape-1 {
     flex: 2.5;
-    background: url('/images/bg-12.png'), #1226AA;
+    background: url('./images/bg-12.png'), #1226AA;
     padding: 30px;
     border-radius: 12px;
     display: flex;
@@ -867,7 +872,7 @@ header {
     border: 1px solid #c1c5c8;
     border-radius: 12px;
     padding: 30px;
-    background: url('/images/bg-33.png');
+    background: url('./images/bg-33.png');
     background-repeat: no-repeat;
     background-position: right bottom;
     clip-path: polygon(0 0, 100% 0, 100% 81%, 80% 100%, 25% 100%, 0 100%);
@@ -957,10 +962,20 @@ header {
 
 .form-bottom-left {
     flex: 2;
+    gap: 50px;
+}
+
+.form-bottom-left > :first-child {
+    flex: 1;
+}
+
+.form-bottom-left > :last-child {
+    flex: 1.2;
 }
 
 .form-bottom-right {
     flex: 1;
+    clip-path: polygon(25% 0%, 89% 0, 100% 11%, 100% 100%, 0 100%, 0 0);
 }
 
 .form-bottom {
@@ -974,6 +989,9 @@ header {
     background: #212121;
     padding: 30px;
     display: flex;
+    clip-path: polygon(25% 0%, 100% 0, 100% 90%, 95% 100%, 0 100%, 0 0);
+
+
 }
 
 .form-bottom-left > :first-child {
@@ -1002,18 +1020,21 @@ header {
     gap: 30px;
 }
 
-.form-3 input {
+.form-3 input,
+.form-3 textarea {
     border: 1px solid #fff;
     border-radius: 6px;
     outline: none;
     background: transparent;
-    opacity: 0.3;
     padding: 8px;
     width: 100%;
+    opacity: 0.3;
 }
 
 .form-3 input,
-.form-3 input::placeholder {
+.form-3 input::placeholder,
+.message textarea,
+.message textarea::placeholder{
     font-weight: 400;
     font-size: 14px;
     color: #fff;
@@ -1050,7 +1071,107 @@ header {
 }
 
 .message textarea {
+    resize: none;
+    height: 104px;
+}
+
+.file {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    color: white;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 6px;
+    max-width: 147px;
+}
+
+.form-3 button {
+    border-radius: 6px;
+    padding: 10px 56px;
+    background: #f93b1d;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.form-3-text,
+.form-3-text a{
+    font-weight: 500;
+    font-size: 10px;
+    color: #fff;
     
+}
+
+.form-3-text {
+    opacity: 0.5;
+}
+
+.form-bottom-right {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-bottom-right h3 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: #212121;
+}
+
+.form-bottom-right h5 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #212121;
+    margin-bottom: 16px;
+}
+
+.contact-2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.contact-2 a {
+    font-weight: 400;
+    font-size: 20px;
+    color: #f93b1d;
+    text-decoration: none;
+}
+
+.flex-img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.flex-img img {
+    width: 40px;
+    height: 40px;
+}
+
+.form-bottom-right h6 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #212121;
+    margin-bottom: 16px;
+}
+
+.form-bottom-right p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #212121;
 }
 
 /* center-form end */
