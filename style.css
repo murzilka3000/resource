@@ -1321,4 +1321,139 @@ footer {
     margin: 0 auto;
 }
 
+
 /* footer end */
+
+
+
+.object-cont {
+    background: url('./images/obj.png');
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    clip-path: polygon(80% 0, 84% 12%, 100% 12%, 100% 88%, 96% 100%, 0 100%, 0 0);
+
+}
+
+.object-cont > :first-child {
+    padding: 40px 40px 46px 40px;
+}
+
+.object-cont h2 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 106%;
+    color: #fff;
+    margin-bottom: 121px;
+}
+
+.object-block {
+    display: flex;
+    gap: 40px;
+}
+
+.object-block p {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.object-block img {
+    margin-bottom: 20px;
+}
+
+.object-block span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.object {
+    margin: 120px 0;
+}
+
+.object-bottom {
+    display: flex;
+    gap: 88px;
+    padding: 40px 100px 40px 40px;
+    border-top: 1px solid #ffffff7d;
+}
+
+.object-bottom > :first-child {
+    flex: 1;
+}
+
+.object-bottom > :last-child {
+    flex: 1.5;
+}
+
+.object-bottom h3 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+}
+
+.object-bottom form {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.object-bottom form > :nth-child(1),
+.object-bottom form > :nth-child(2) {
+    flex: 1.6;
+}
+
+.object-bottom form > :nth-child(3) {
+    flex: 1;
+}
+
+.object-bottom input {
+    border-radius: 6px;
+    background: #fff;
+    border: none;
+    outline: none;
+    padding: 11px;
+    width: 100%;
+}
+
+.object-bottom input,
+.object-bottom input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: #2121217e;
+}
+
+.object-bottom label {
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.object-bottom label span {
+    font-size: 18px;
+    color: #f93b1d;
+}
+
+.object-bottom p,
+.object-bottom a {
+    font-weight: 500;
+    font-size: 10px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.object-bottom button {
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    background: #f93b1d;
+    border: none;
+    max-width: 180px;
+}
