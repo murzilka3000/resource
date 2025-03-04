@@ -1457,3 +1457,119 @@ footer {
     border: none;
     max-width: 180px;
 }
+
+.hero-right {
+    background: #212121;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.hero-right h3 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.slider {
+    display: flex;
+    margin-bottom: 120px;
+    gap: 6px;
+}
+
+.swiper-container {
+    overflow: hidden;
+}
+
+.slider > :first-child {
+    flex: 2;
+}
+
+.slider > :last-child {
+    flex: 1;
+}
+
+.swiper-container {
+    position: relative;
+}
+
+.swiper-container
+.swiper-wrapper > :first-child {
+    background: url('./images/slider-hero.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.swiper-container
+.swiper-wrapper > :nth-child(2) {
+    background: url('./images/slider-hero.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.swiper-container
+.swiper-wrapper > :nth-child(3) {
+    background: url('./images/slider-hero.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.swiper-container
+.swiper-wrapper
+.swiper-slide {
+    border-radius: 12px;
+    padding: 40px;
+    clip-path: polygon(0 0, 74% 0, 76% 7%, 88% 7%, 88% 0, 100% 0, 100% 52%, 100% 91%, 72% 91%, 66% 100%, 20% 100%, 0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.swiper-container
+.swiper-wrapper
+.swiper-slide h5 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 106%;
+    color: #fff;
+    margin-bottom: 21px;
+}
+
+.swiper-container
+.swiper-wrapper
+.swiper-slide p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 86px;
+}
+
+.swiper-navigation-2 {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 2;
+}
+
+.swiper-plag {
+    position: absolute;
+    bottom: 40px!important;
+    left: 160px!important;
+    z-index: 2;
+}
+
+.swiper-pagination-bullet {
+    border: 1px solid #fff!important;
+    border-radius: 3px!important;
+    width: 8px!important;
+    height: 40px!important;
+    background-color: transparent!important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ffff!important;
+}

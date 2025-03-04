@@ -13,3 +13,24 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 30,
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".swiper-container", { // Теперь инициализируем Swiper на .swiper-container
+        loop: true, 
+        navigation: {
+            nextEl: ".swiper-next",
+            prevEl: ".swiper-prev",
+        },
+        autoplay: {
+            delay: 8000,
+        },
+        pagination: {
+            el: ".swiper-plag",
+            clickable: true, // Делает точки кликабельными
+        },
+        centeredSlides: true, 
+        slidesPerView: 1, 
+        spaceBetween: 10,
+    });
+});
