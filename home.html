@@ -132,38 +132,48 @@
                             техническое обслуживание <br>
                         </h3>
                         <div class="form-3">
-                            <form action="#">
-                                <div>
+                            <form action="#" class="form-container-3">
+                                <div class="flex-112">
                                     <div>
-                                        <label for="name">Имя <span>*</span></label>
-                                        <input type="text" id="name" name="name" required placeholder="Иванов Иван">
+                                        <div class="flex-111">
+                                            <div>
+                                                <label for="name">Имя <span>*</span></label>
+                                                <input type="text" id="name" name="name" required placeholder="Иванов Иван">
+                                            </div>
+                                            <div>
+                                                <label for="phone">Телефон <span>*</span></label>
+                                                <input type="tel" id="phone" name="phone" required placeholder="8 (___) ___-__-__">
+                                            </div>
+                                        </div>
+                                    
+                                        <div>
+                                            <label for="company">Компания</label>
+                                            <input type="text" id="company" name="company" placeholder="Remins">
+                                        </div>
                                     </div>
+                                
                                     <div>
-                                        <label for="phone">Телефон <span>*</span></label>
-                                        <input type="tel" id="phone" name="phone" required placeholder="8 (___) ___-__-__">
+                                        <div>
+                                            <label for="email">Почта</label>
+                                            <input type="email" id="email" name="email" placeholder="sales@resourcecsp.com">
+                                        </div>
+                                    
+                                        <div class="message">
+                                            <label for="comment">Комментарий</label>
+                                            <textarea id="comment" name="comment" placeholder="Введите комментарий ..."></textarea>
+                                        </div>
                                     </div>
                                 </div>
                             
-                                <div>
-                                    <label for="company">Компания</label>
-                                    <input type="text" id="company" name="company" placeholder="Remins">
+                                <div class="flex-322">
+                                    <div>
+                                        <label class="file" for="file-upload">
+                                            Загрузить файл
+                                        </label>
+                                        <input type="file" id="file-upload" name="file" style="display: none;">
+                                    </div>
+                                    <button type="submit">Оставить заявку</button>
                                 </div>
-                            
-                                <div>
-                                    <label for="email">Почта</label>
-                                    <input type="email" id="email" name="email" placeholder="sales@resourcecsp.com">
-                                </div>
-                            
-                                <div class="message">
-                                    <label for="comment">Комментарий</label>
-                                    <textarea id="comment" name="comment" placeholder="Введите комментарий ..."></textarea>
-                                </div>
-                            
-                                <label class="file" for="file-upload">
-                                    Загрузить файл
-                                </label>
-                                <input type="file" id="file-upload" name="file" style="display: none;">
-                                <button type="submit">Оставить заявку</button>
                                 <p class="form-3-text">
                                     Нажимая на кнопку, вы соглашаетесь с 
                                     <a href="">условиями политики конфиденциальности</a>
@@ -213,22 +223,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="running-cont">
-                    <div class="running">
-                        <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
-                        <img src="./images/run.svg" alt="">
-                        <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
-                        <img src="./images/run.svg" alt="">
-                        <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
-                        <img src="./images/run.svg" alt="">
-                        <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
-                        <img src="./images/run.svg" alt="">
-                        <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
-                        <img src="./images/run.svg" alt="">
-                        <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
-                        <img src="./images/run.svg" alt="">
-                        <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
-                        <img src="./images/run.svg" alt="">
+                <div class="running-p">
+                    <div class="running-cont">
+                        <div class="running">
+                            <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
+                            <img src="./images/run.svg" alt="">
+                            <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
+                            <img src="./images/run.svg" alt="">
+                            <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
+                            <img src="./images/run.svg" alt="">
+                            <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
+                            <img src="./images/run.svg" alt="">
+                            <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
+                            <img src="./images/run.svg" alt="">
+                            <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
+                            <img src="./images/run.svg" alt="">
+                            <p>ВСЕ ДЕТАЛИ ВАЖНЫ</p>
+                            <img src="./images/run.svg" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="technique">
@@ -241,82 +253,92 @@
                         с технологическими и техническими требованиями
                     </p>
                     <div class="technique-cards-cont">
-                        <div class="technique-cards-cont-item">
-                            <div
-                            style="
-                            background: url('./images/bg-1.png');
-                            background-position: center center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            min-height: 160px;
-                            "
-                            ></div>
-                            <div>
-                                <h4>
-                                    Дробильно-сортировочное
-                                    оборудование (24)
-                                </h4>
-                                <ul>
-                                    <li>Мобильные щековые дробилки</li>
-                                    <li>Мобильные конусные дробилки</li>
-                                    <li>Мобильные роторные дробилки</li>
-                                    <li>Мобильные грохоты</li>
-                                    <li>Модульное и стационарное оборудование</li>
-                                </ul>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="technique-cards-cont-item">
+                                    <div
+                                    style="
+                                    background: url('./images/bg-1.png');
+                                    background-position: center center;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    min-height: 160px;
+                                    "
+                                    ></div>
+                                    <div>
+                                        <h4>
+                                            Дробильно-сортировочное
+                                            оборудование (24)
+                                        </h4>
+                                        <ul>
+                                            <li>Мобильные щековые дробилки</li>
+                                            <li>Мобильные конусные дробилки</li>
+                                            <li>Мобильные роторные дробилки</li>
+                                            <li>Мобильные грохоты</li>
+                                            <li>Модульное и стационарное оборудование</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="technique-cards-cont-item">
-                            <div
-                            style="
-                            background: url('./images/bg-1.png');
-                            background-position: center center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            min-height: 160px;
-                            "
-                            ></div>
-                            <div>
-                                <h4>
-                                    Дробильно-сортировочное
-                                    оборудование (24)
-                                </h4>
-                                <ul>
-                                    <li>Мобильные щековые дробилки</li>
-                                    <li>Мобильные конусные дробилки</li>
-                                    <li>Мобильные роторные дробилки</li>
-                                    <li>Мобильные грохоты</li>
-                                    <li>Модульное и стационарное оборудование</li>
-                                </ul>
+                            <div class="swiper-slide">
+                                <div class="technique-cards-cont-item">
+                                    <div
+                                    style="
+                                    background: url('./images/bg-1.png');
+                                    background-position: center center;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    min-height: 160px;
+                                    "
+                                    ></div>
+                                    <div>
+                                        <h4>
+                                            Дробильно-сортировочное
+                                            оборудование (24)
+                                        </h4>
+                                        <ul>
+                                            <li>Мобильные щековые дробилки</li>
+                                            <li>Мобильные конусные дробилки</li>
+                                            <li>Мобильные роторные дробилки</li>
+                                            <li>Мобильные грохоты</li>
+                                            <li>Модульное и стационарное оборудование</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div 
-                        class="technique-cards-cont-item technique-cards-cont-item-3">
-                            <div style="border-radius: 12px;">
-                                <h4>Двигатели (10)</h4>
+                            <div class="swiper-slide">
+                                <div 
+                            class="technique-cards-cont-item technique-cards-cont-item-3">
+                                <div style="border-radius: 12px;">
+                                    <h4>Двигатели (10)</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="technique-cards-cont-item">
-                            <div
-                            style="
-                            background: url('./images/bg-1.png');
-                            background-position: center center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            min-height: 160px;
-                            "
-                            ></div>
-                            <div>
-                                <h4>
-                                    Техника для открытых
-                                    горных работ (32)
-                                </h4>
-                                <ul>
-                                    <li>Самосвалы</li>
-                                    <li>Экскаваторы</li>
-                                    <li>Погрузчики</li>
-                                    <li>Бульдозеры</li>
-                                    <li>Буровое оборудование</li>
-                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="technique-cards-cont-item">
+                                    <div
+                                    style="
+                                    background: url('./images/bg-1.png');
+                                    background-position: center center;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    min-height: 160px;
+                                    "
+                                    ></div>
+                                    <div>
+                                        <h4>
+                                            Техника для открытых
+                                            горных работ (32)
+                                        </h4>
+                                        <ul>
+                                            <li>Самосвалы</li>
+                                            <li>Экскаваторы</li>
+                                            <li>Погрузчики</li>
+                                            <li>Бульдозеры</li>
+                                            <li>Буровое оборудование</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -783,13 +805,15 @@
                     </h3>
                     <div>
                         <h5>Коммерческий отдел</h5>
-                        <div class="contact-2">
-                            <img src="./images/t-1.svg" alt="">
-                            <a href="tel:+74999626999">8 499 962 69 99</a>
-                        </div>
-                        <div class="contact-2">
-                            <img src="./images/t-2.svg" alt="">
-                            <a href="mailto:sales@resourcecsp.com">sales@resourcecsp.com</a>
+                        <div class="flex-434">
+                            <div class="contact-2">
+                                <img src="./images/t-1.svg" alt="">
+                                <a href="tel:+74999626999">8 499 962 69 99</a>
+                            </div>
+                            <div class="contact-2">
+                                <img src="./images/t-2.svg" alt="">
+                                <a href="mailto:sales@resourcecsp.com">sales@resourcecsp.com</a>
+                            </div>
                         </div>
                         <div class="flex-img">
                             <a href="">
