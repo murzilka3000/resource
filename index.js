@@ -16,10 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 slidesPerView: 5,
                 spaceBetween: 10,
             },
-            0: {
+            990: {
                 slidesPerView: 4,
                 spaceBetween: 10,
             },
+            0: {
+                slidesPerView: 3,
+                spaceBetween: 10,   
+            }
         },
     });
 });
@@ -48,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     new Swiper(".technique-cards-cont", { // Теперь инициализируем Swiper на .swiper-container
-        loop: true, 
+        loop: false, 
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -57,17 +61,21 @@ document.addEventListener("DOMContentLoaded", function () {
             delay: 8000,
         },
        
-        slidesPerView: 5, 
+        slidesPerView: 4, 
         spaceBetween: 30,
         breakpoints: {
-            1200: {
-                slidesPerView: 5,
-                spaceBetween: 10,
-            },
-            0: {
+            1379: {
                 slidesPerView: 4,
                 spaceBetween: 10,
             },
+            1006: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 10,   
+            }
         },
     });
 });

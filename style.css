@@ -353,9 +353,9 @@ header {
 
 
   .technique-cards-cont {
-    display: flex;
-    gap: 6px;
-    margin-top: 60px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 20px 0;
   }
 
   .technique-cards-cont-item > :first-child {
@@ -370,6 +370,9 @@ header {
 
 .technique-cards-cont-item {
     flex: 1;
+    min-height: 476px;
+    background: #fff;
+    border-radius: 0 0 12px 12px;
 }
 
 .technique-cards-cont-item h4 {
@@ -1486,6 +1489,7 @@ footer {
     background: #f93b1d;
     border: none;
     max-width: 180px;
+    white-space: nowrap;
 }
 
 .hero-right {
@@ -1614,6 +1618,23 @@ footer {
     margin-top: 10px;
 }
 
+.flex-676 {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.flex-676 > :last-child {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.abs-12 img {
+    width: 44px;
+    height: 44px;
+}
 
 
 @media screen and (max-width: 1200px) {
@@ -1710,3 +1731,240 @@ footer {
 
 }
 
+@media screen and (max-width: 1137px) {
+    .form-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .center-form-cont {
+        clip-path: polygon(100% 0, 100% 19%, 100% 79%, 93% 100%, 0 100%, 0 79%, 0 0);
+        background: url('./images/bg-mob.png'), #212121;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
+
+    }
+}
+
+@media screen and (max-width: 1033px) {
+    header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero-right {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-right h3 {
+        font-size: 16px;
+        max-width: 370px;
+        margin-bottom: 0;
+    }
+
+    .custom-shape-1 h3, .custom-shape-2 h3 {
+        font-size: 30px;
+    }
+
+    .custom-shape-1,
+    .custom-shape-2 {
+        flex: 1;
+    }
+
+    .object-block {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 31px;
+    }
+
+    .object-bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .object-cont h2  {
+        margin-bottom: 105px;
+    }
+
+    .details-cont h2 {
+        font-size: 40px;
+    }
+
+    .details-cont img {
+        max-width: 400px;
+    }
+
+    .work-grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .numbers-left {
+        flex: 2;
+    }
+
+    .numbers-right {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 933px) {
+    .object-cont h2 {
+        max-width: 450px;
+    }
+
+    .form-bottom-right {
+        flex-direction: column;
+    }
+
+    .form-bottom-right h3 {
+        max-width: 350px;
+        margin-bottom: 60px;
+    }
+
+    .flex-434 {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contact-2 {
+        margin-bottom: 0;
+    }
+
+    .flex-755 {
+        display: flex;
+        gap: 100px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .footer-bottom, .footer-bottom > :first-child, .footer-bottom > :last-child  {
+        justify-self: flex-start;
+    }
+
+    .footer-bottom, .footer-bottom > :first-child {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .swiper-container .swiper-wrapper .swiper-slide {
+        padding: 145px 30px 30px 30px;
+    }
+
+    .advantages {
+        flex-direction: column;
+    }
+
+    .advantages-item p {
+        max-width: 466px;
+    }
+
+    .advantages-item {
+        flex-direction: row;
+    }
+
+    .center-form-cont {
+        clip-path: polygon(100% 0, 100% 19%, 100% 79%, 93% 100%, 0 100%, 0 79%, 0 0);
+        background: url('./images/bg-mob-2.png'), #212121;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
+    }
+
+    .center-form-cont h2 br {
+        display: none;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .brands h2 br {
+        display: none;
+    }
+
+    .article {
+        flex-direction: column;
+    }
+
+    .custom-shape-2 {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    .object-bottom {
+        flex-direction: row;
+    }
+
+    .object-bottom form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .object-bottom h3 br {
+        display: none;
+    }
+
+    .object-bottom > :first-child,
+    .object-bottom > :last-child {
+        flex: 1;
+    }
+
+    .details-cont {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        padding: 80px 0;
+        gap: 60px;
+    }
+
+    .details-cont h2 br {
+        display: none;
+    }
+
+    .details-cont img {
+        max-width: 212px;
+    }
+
+    .work {
+        margin-top: 120px;
+    }
+
+    .numbers-cont {
+        flex-direction: column;
+    }
+
+    .numbers-right {
+        display: flex;
+    }
+
+    .text br,
+    .title br {
+        display: none;
+    }
+
+    .industry-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .form-bottom-left {
+        gap: 27px;
+    }
+
+    .object-cont {
+        clip-path: polygon(0 36%, 0 0, 68% 0, 79% 6%, 100% 6%, 100% 26%, 100% 48%, 100% 92%, 91% 100%, 35% 100%, 20% 100%, 0 100%);
+    }
+
+    .companies h2 br {
+        display: block;
+    }
+
+}
