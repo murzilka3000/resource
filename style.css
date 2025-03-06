@@ -2202,4 +2202,87 @@ footer {
     .object-bottom button {
         max-width: 100%;
     }
+
+    .center-form-cont {
+        clip-path: polygon(0 93%, 0 0, 68% 0, 100% 0, 100% 6%, 100% 26%, 100% 48%, 100% 89%, 88% 100%, 35% 100%, 54% 100%, 0 100%);
+        background: #212121;
+    }
+    .swiper-container .swiper-wrapper .swiper-slide {
+        padding: 120px 30px 30px 30px;
+    }
+
+    .runtian-left h2, .runtian-right h2 {
+        font-size: 20px;
+    }
+
+    .center-form-cont h2 {
+        font-size: 20px;
+    }
+
+    .custom-shape-1 h3, .custom-shape-2 h3 {
+        font-size: 20px;
+    }
+
+    .flex-center button {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .runtian-top img {
+        width: 150px;
+    }
+
+    .form-bottom {
+        padding: 60px 15px;
+    }
+
+    .industry,
+    .numbers,
+    .work,
+    .details,
+    .object,
+    .companies,
+    .article,
+    .runtian,
+    .brands,
+    .center-form,
+    .running-p,
+    .advantages,
+    .slider {
+        padding: 0 15px;
+    }
+
+    .center-form-cont input {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .form-container {
+        display: block;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 486px) {
+    .brands-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .details-cont h2 {
+        font-size: 20px;
+    }
+
+    .work-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+  
+}
+
+
+footer {
+    display: none;
 }
