@@ -1968,3 +1968,238 @@ footer {
     }
 
 }
+
+.flex-900 {
+    display: flex;
+    gap: 10px;
+}
+
+.flex-900 > :first-child,
+.flex-900 > :last-child {
+    flex: 1;
+}
+
+
+@media screen and (max-width: 730px) {
+    .object-block-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .object-block-item img {
+        margin: 0;
+    }
+
+    .object-bottom{
+        flex-direction: column;
+    }
+
+    .form-bottom-left {
+        flex-direction: column;
+    }
+
+    .form-bottom-left > :first-child > :last-child  {
+        display: none;
+    }
+
+    .flex-755 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .flex-img {
+        margin: 0;
+    }
+
+    .form-bottom-right {
+        clip-path: polygon(0 93%, 0 0, 68% 0, 100% 0, 100% 6%, 100% 26%, 100% 48%, 100% 82%, 88% 100%, 35% 100%, 54% 100%, 0 100%);
+    }
+
+    .form-bottom-left {
+        clip-path: polygon(0 93%, 0 0, 68% 0, 100% 0, 100% 6%, 100% 26%, 100% 48%, 100% 90%, 88% 100%, 35% 100%, 54% 100%, 0 100%);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .swiper-container .swiper-wrapper .swiper-slide h5 {
+        font-size: 20px;
+    }
+
+    .advantages-item h4 {
+        font-size: 18px;
+    }
+
+    .advantages-item p {
+        font-size: 14px;
+    }
+
+    .advantages-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .advantages {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+    }
+
+    .running p {
+        font-size: 30px;
+    }
+
+    .slider,
+    .brands,
+    .object,
+    .work,
+    .numbers,
+    .flex-center{
+        margin-bottom: 60px;
+    }
+
+    .technique,
+    .brands,
+    .article,
+    .companies,
+    .object,
+    .work {
+        margin-top: 60px;
+    }
+
+    .form-bottom,
+    .hero {
+        padding-bottom: 60px;
+    }
+
+    .form-bottom {
+        padding-top: 60px;
+    }
+
+    .technique h2,
+    .brands h2,
+    .title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .technique-cards-cont {
+        padding-top: 0;
+    }
+
+    .advantages-item h4 {
+        margin-bottom: 10px;
+    }
+
+    .object-cont h2 {
+        font-size: 20px;
+        max-width: 300px;
+        margin-bottom: 60px;
+    }
+
+    .object-bottom h3,
+    .form-bottom-right h3 {
+        font-size: 20px;
+    }
+
+    .object-bottom {
+        gap: 20px;
+    }
+
+    .object-bottom,
+    .object-cont > :first-child  {
+        padding: 30px;
+    }
+
+    .details-cont h2 {
+        font-size: 32px;
+    }
+
+    .work-grid {
+        padding-top: 10px;
+    }
+
+    .work-grid-item h3  {
+        font-size: 18px;
+    }
+
+    .work-grid-item {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .numbers-left h3 {
+        font-size: 30px;
+    }
+
+    .numbers-left p,
+    .numbers-right-item p  {
+        font-size: 14px;
+    }
+
+    .numbers-right {
+        gap: 10px;
+    }
+
+    .industry-grid p,
+    .text {
+        font-size: 14px;
+    }
+
+    .flex-center {
+        margin-top: 60px;
+    }
+
+    .form-bottom-left > :first-child h3 {
+        font-size: 20px;
+        max-width: 192px;
+        margin-bottom: 10px;
+    }
+
+    .form-bottom-left > :first-child p {
+        font-size: 14px;
+    }
+}
+
+  
+@media screen and (max-width: 576px) {
+    .flex-112 {
+        flex-direction: column;
+    }
+
+    .form-3 form > :first-child > :last-child {
+        margin-top: 0;
+    }
+
+    .flex-322 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .advantages {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .abs-12 {
+        display: none!important;
+    }
+
+    .custom-shape-2 {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .companies-nav-cont div {
+        display: none;
+    }
+
+    .flex-900 {
+        flex-direction: column;
+    }
+
+    .object-bottom button {
+        max-width: 100%;
+    }
+}
