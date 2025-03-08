@@ -2478,3 +2478,71 @@ footer {
 
 
 /* contacts end */
+
+
+
+/* applications-empty start */
+
+.page-appliction {
+    background: #ebebeb;
+    padding-bottom: 120px;
+}
+
+
+.appliction-cont {
+    border-radius: 12px;
+    background: url('./images/bg-100.png'), #fff;
+    padding: 30px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    
+}
+
+.appliction-cont h2 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 106%;
+    color: #212121;
+    margin-bottom: 30px;
+}
+
+.appliction-cont p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #212121;
+}
+
+.appliction-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.appliction-cont-link a {
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+    padding: 15px 57px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.appliction-cont-link {
+    display: flex;
+    gap: 10px;
+}
+
+.appliction-cont-link > :first-child {
+    background: #f93b1d;
+    
+}
+
+.appliction-cont-link > :last-child {
+    background: #212121;
+}
+
+/* applications-empty end */
