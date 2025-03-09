@@ -117,7 +117,6 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
-    padding: 0 30px;
 }
 
 .header-top > :first-child {
@@ -237,7 +236,7 @@ body {
 }
 
 header {
-    padding: 24px 0 30px 0;
+    padding: 24px 30px 30px 30px;
 }
 
 .header-bottom {
@@ -259,6 +258,8 @@ header {
     color: #000;
     text-decoration: none;
 }
+
+
 
 
 
@@ -1292,6 +1293,13 @@ footer {
     text-decoration: none;
 }
 
+.footer-contact,
+.footer-contact > :first-child,
+.footer-contact > :nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-contact > :nth-child(2) {
     margin: 20px 0;
 }
@@ -1747,12 +1755,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 1033px) {
-    header {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 992px) {
     .hero-right {
         flex-direction: column;
@@ -1837,18 +1839,6 @@ footer {
     .flex-755 {
         display: flex;
         gap: 100px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-    }
-
-    .footer-bottom, .footer-bottom > :first-child, .footer-bottom > :last-child  {
-        justify-self: flex-start;
-    }
-
-    .footer-bottom, .footer-bottom > :first-child {
-        margin-bottom: 60px;
     }
 }
 
@@ -2283,11 +2273,6 @@ footer {
 }
 
 
-footer {
-    display: none;
-}
-
-
 
 /* contacts start */
 
@@ -2496,7 +2481,6 @@ footer {
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 60%;
-    
 }
 
 .appliction-cont h2 {
@@ -2545,4 +2529,253 @@ footer {
     background: #212121;
 }
 
+.appliction-p {
+    padding: 0 30px
+}
+
+@media screen and (max-width: 1057px) {
+    .appliction-cont {
+        background-size: 50%;
+    }
+}
+
+@media screen and (max-width: 916px) {
+    .appliction-cont {
+        background: url('./images/bg-1000.png'), #fff;
+        background-size: 80%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 759px) {
+    .appliction-cont {
+        background: url('./images/bg-1001.png'), #fff;
+        background-size: 80%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        padding: 30px 30px 150px 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .appliction-cont h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .appliction-cont p {
+        font-size: 16px;
+    }
+
+    .appliction-cont {
+        gap: 30px;
+        background-size: 100%;
+        padding: 24px 24px 150px 24px;
+    }
+
+    .appliction-cont-link a {
+        text-decoration: none;
+        display: block;
+        border-radius: 6px;
+        padding: 15px 32px;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .appliction-p {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .appliction-cont {
+        background: url('./images/bg-1002.png'), #fff;
+        background-size: 100%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+    }
+
+    .appliction-cont-link a {
+        padding: 15px 22px;
+    }
+}
+
 /* applications-empty end */
+
+
+
+@media screen and (max-width: 1263px) {
+    .header-bottom ul {
+        display: flex;
+        padding: 12px 30px;
+        justify-content: space-between;
+        gap: 80px;
+    }
+}
+
+.header-top-top-mob {
+    display: none;
+}
+
+@media screen and (max-width: 1034px) {
+    .header-bottom {
+        display: none;
+    }
+
+    .header-top-bottom,
+    .header-top-top-social,
+    .header-top-top-number,
+    .header-top-top-time,
+    .header-top-top > :last-child{
+        display: none;
+    }
+
+    .header-top > :first-child img {
+        max-width: 111px;
+    }
+
+    .header-top {
+        align-items: center;
+        padding-bottom: 12px;
+    }
+
+    .header-top-top {
+        margin-bottom: 0;
+    }
+
+    .header-top-top-mob {
+        display: flex;
+        gap: 10px;
+    }
+
+    .header-top-top-mob > :last-child {
+        background: #fff;
+        color: #212121;
+        text-decoration: none;
+        border: 1px solid #adadad;
+    }
+
+    .header-top-top-mob > :last-child p {
+        color: #212121;
+    }
+
+    .header-bottom-mob {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 13px;
+        border-top: 1px solid #adadad;
+    }
+
+    .header-bottom-mob > :first-child > :first-child {
+        font-weight: 400;
+        font-size: 12px;
+        color: #f93b1d;
+        margin-bottom: 6px;
+    }
+
+    .header-bottom-mob > :first-child > :last-child {
+        font-weight: 400;
+        font-size: 12px;
+        color: #767676;
+    }
+
+    .header-bottom-mob > :last-child {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-bottom-mob > :last-child > :first-child a {
+        font-weight: 400;
+        font-size: 24px;
+        color: #212121;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .header-bottom-mob > :last-child > :last-child,
+    .header-bottom-mob > :last-child > :nth-child(2){
+        display: none;
+    }
+
+    .header-bottom-mob > :last-child > :first-child a {
+        font-size: 20px;
+    }
+
+    header {
+        padding: 24px 15px 30px 15px;
+    }
+}
+
+@media screen and (max-width: 407px) {
+    .za-header {
+        padding: 5px 13px;
+    }
+
+    .header-bottom-mob > :last-child > :first-child a {
+        font-size: 17px;
+    }
+}
+
+
+@media screen and (max-width: 929px) {
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .footer-contact {
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .footer-bottom > :last-child {
+        gap: 50px;
+    }
+
+    .footer-bottom > :first-child {
+        justify-content: flex-start;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer-contact {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 684px) {
+    .footer-contact  {
+        flex-direction: column;
+    }
+
+    .footer-bottom > :first-child {
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .footer-contact {
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 486px) {
+    .footer-bottom > :first-child {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-bottom > :last-child  {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+footer {
+    display: none;
+}
