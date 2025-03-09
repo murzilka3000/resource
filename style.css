@@ -106,6 +106,10 @@ body {
     margin: 0 auto;
 }
 
+.header-bottom-mob {
+    display: none;
+}
+
 
 
 
@@ -2285,7 +2289,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 30px 30px 60px 30px;
+    padding: 30px 0px 60px 0px;
 }
 
 .breadcrumps a,
@@ -2778,4 +2782,288 @@ footer {
 
 footer {
     display: none;
+}
+
+
+.cart {
+    background: #ebebeb;
+    padding: 0 30px 120px 30px;
+}
+
+
+
+
+.cart-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.cart-top h2 {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 106%;
+    color: #212121;
+}
+
+.cart-top span {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background: #f93b1d;
+    border-radius: 100px;
+    padding: 6px 10px;
+    position: relative;
+    top: -10px;
+    font-family: var(--font-family);
+}
+
+.cart-top button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 6px;
+    padding: 11px 30px 9px 30px;
+    background: #212121;
+    border: none;
+}
+
+.cart-top button p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.cart-center {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-bottom: 30px;
+}
+
+.cart-center label {
+    font-weight: 400;
+    font-size: 20px;
+    color: #212121;
+}
+
+.cart-center p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #626262;
+}
+
+
+
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .custom-checkbox input {
+    display: none; /* Скрываем стандартный чекбокс */
+  }
+  
+  .custom-checkbox span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #959595;
+    border-radius: 4px;
+    position: relative;
+    transition: background 0.2s, border-color 0.2s;
+    background: #fff;
+  }
+  
+  .custom-checkbox input:checked + span {
+    background: #F93B1D;
+    border-color: #F93B1D;
+    background-image: url("./images/checkmark.svg"); /* Путь к изображению */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px; /* Подгоняем размер изображения */
+  }
+
+
+.product-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.product-item > :last-child button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    border: 1px solid #212121;
+    border-radius: 6px;
+    padding: 11px 30px 9px 30px;
+    background-color: #ffff;
+}
+
+.product-item > :last-child button p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #212121;
+}
+
+.product-item-img {
+    min-height: 110px;
+    border-radius: 6px;
+    padding: 6px; 
+    min-width: 160px;  
+}
+
+.product-item > :first-child {
+    display: flex;
+    gap: 30px;
+}
+
+.product-item-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-item-block > :first-child > :first-child {
+    font-weight: 700;
+    font-size: 16px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.product-item-block > :first-child > :last-child {
+    font-weight: 400;
+    font-size: 14px;
+    color: #767676;
+}
+
+.product-item-block > :last-child {
+    display: flex;
+    align-items: center;
+    width: 91px;
+}
+
+
+
+.product-item-block > :last-child {
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+}
+
+.product-item-block > :last-child button {
+    background: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.product-item-block > :last-child span {
+    border-radius: 4px;
+    padding: 10px 15px;
+    background: #ebebeb;
+}
+
+.cart-bottom > :not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.flex-5490 {
+    display: flex;
+    gap: 40px;
+}
+
+.flex-5490  > :first-child {
+    flex: 2;
+}
+
+.flex-5490  > :last-child {
+    flex: 1;
+}
+
+.flex-5490  > :last-child form {
+    border-radius: 12px;
+    background: #fff;
+    padding: 30px;
+}
+
+.flex-5490  > :last-child form > :first-child {
+    display: flex;
+    gap: 14px;
+}
+
+.flex-5490  > :last-child form > :first-child > :first-child,
+.flex-5490  > :last-child form > :first-child > :last-child {
+    flex: 1;
+}
+
+.flex-5490  > :last-child form input,
+.flex-5490  > :last-child form textarea {
+    border: 1px solid #212121;
+    border-radius: 6px;
+    opacity: 0.3;
+    padding: 8px;
+    outline: none;
+    width: 100%;
+}
+
+.flex-5490  > :last-child form input,
+.flex-5490  > :last-child form input::placeholder,
+.flex-5490  > :last-child form textarea,
+.flex-5490  > :last-child form textarea::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: #212121;
+}
+
+.flex-5490  > :last-child form label {
+    font-weight: 400;
+    font-size: 14px;
+    color: #212121;
+    margin-bottom: 2px;
+}
+
+.flex-5490  > :last-child form button {
+    background: #f93b1d;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 56px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.flex-5491 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.form-3-text-2,
+.form-3-text-2 a{
+    font-weight: 500;
+    font-size: 10px;
+    color: #212121;
+    
+}
+
+.form-3-text-2 {
+    opacity: 0.5;
+    margin-top: 12px;
 }
