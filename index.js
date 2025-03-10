@@ -83,3 +83,19 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const button = document.querySelector(".button-3");
+    const cartCenter = document.querySelector(".cart-center");
+    const cartBottom = document.querySelector(".cart-bottom");
+    const cartBottomMob = document.querySelector(".cart-bottom-mob");
+
+    button.addEventListener("click", () => {
+        cartCenter.style.display = cartCenter.style.display === "none" ? "flex" : "none";
+        cartBottom.style.display = cartBottom.style.display === "none" ? "block" : "none";
+        cartBottomMob.style.display = cartBottomMob.style.display === "none" ? "block" : "none";
+    });
+});

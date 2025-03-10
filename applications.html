@@ -113,10 +113,16 @@
                     <div>
                         <div class="cart-top">
                             <h2>Заявки <span>3</span></h2>
-                            <button>
-                                <img src="./images/del.svg" alt="">
-                                <p>Удалить все</p>
-                            </button>
+                            <div>
+                                <button class="button-4">
+                                    <img src="./images/del.svg" alt="">
+                                    <p>Удалить все</p>
+                                </button>
+                                <button class="button-3">
+                                    <img src="./images/button-2-1.svg" alt="">
+                                    <p>Свернуть все</p>
+                                </button>
+                            </div>
                         </div>
                         <div class="cart-center">
                             <div>
@@ -237,6 +243,51 @@
                                     </button>
                                 </div>
                             </div>
+                        </div>
+                        <div class="cart-bottom-mob" style="display: none;">
+                            <div class="cart-bottom-mob-top">
+                                <div>
+                                    <img src="./images/vosk.svg" alt="">
+                                </div>
+                                <p>
+                                    Разверните список, чтобы увидеть <br>
+                                    все товары
+                                </p>
+                            </div>
+                            <form action="#" class="cart-bottom-mob-form">
+                                <div class="flex-4344">
+                                    <div>
+                                        <div class="flex-4343">
+                                            <div>
+                                                <label for="name">Имя <span>*</span></label>
+                                                <input type="text" id="name" name="name" required placeholder="Иванов Иван">
+                                            </div>
+                                            <div>
+                                                <label for="phone">Телефон <span>*</span></label>
+                                                <input type="tel" id="phone" name="phone" required placeholder="8 (___) ___-__-__">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="flex-5491">
+                                            <label for="email">Почта</label>
+                                            <input type="email" id="email" name="email" placeholder="sales@resourcecsp.com">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="message">
+                                        <label for="comment">Комментарий</label>
+                                        <textarea id="comment" name="comment" placeholder="Введите комментарий ..."></textarea>
+                                    </div>
+                                </div>
+    
+                                <div class="flex-25678">
+                                    <button type="submit">Оставить заявку</button>
+                                    <p class="form-3-text-2">
+                                        Нажимая на кнопку, вы соглашаетесь<br> с 
+                                        <a href="">условиями политики конфиденциальности</a>
+                                    </p>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div>

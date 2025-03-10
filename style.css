@@ -2821,7 +2821,7 @@ footer {
     font-family: var(--font-family);
 }
 
-.cart-top button {
+.button-4 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3067,3 +3067,236 @@ footer {
     opacity: 0.5;
     margin-top: 12px;
 }
+
+.button-3 {
+    background: transparent;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 6px;
+    padding: 11px 30px 9px 30px;
+    border: 1px solid #212121;
+    
+}
+
+.button-3 p {
+    color: #212121!important;
+}
+
+.cart-top div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.cart-bottom-mob-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 40px;
+    border-bottom: 1px dashed #626262;
+}
+
+
+.cart-bottom-mob-form input,
+.cart-bottom-mob-form textarea {
+    border: 1px solid #212121;
+    border-radius: 6px;
+    opacity: 0.3;
+    padding: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.cart-bottom-mob-form input,
+.cart-bottom-mob-form textarea,
+.cart-bottom-mob-form input::placeholder,
+.cart-bottom-mob-form textarea::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: #212121;
+}
+
+.cart-bottom-mob-form label {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    color: #212121;
+    margin-bottom: 2px;
+}
+
+.cart-bottom-mob-form {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.cart-bottom-mob-form button {
+    border-radius: 6px;
+    padding: 10px 56px;
+    background: #f93b1d;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.flex-4343 {
+    display: flex;
+    gap: 10px;
+}
+
+.flex-4344 {
+    display: flex;
+    gap: 20px;
+}
+
+.flex-4344 > :first-child,
+.flex-4344 > :last-child,
+.flex-4343 > :first-child,
+.flex-4343 > :last-child {
+    flex: 1;
+}
+
+.flex-25678 {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+@media screen and (max-width: 998px) {
+    .button-3 {
+        display: flex;
+    }
+
+    .flex-5490 > :last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .flex-4343 {
+        flex-direction: column;
+    }
+
+    .flex-4344 textarea {
+        height: 146px;
+    }
+
+    .cart-bottom-mob-form button {
+        padding: 10px 36px;
+    }
+}
+
+@media screen and (max-width: 656px) {
+    .cart-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .cart-top div {
+        width: 100%;
+    }
+
+    .cart-top div button {
+        width: 100%;
+        flex: 1;
+    }
+
+    .cart-top h2 {
+        font-size: 20px;
+    }
+
+    .cart-top span  {
+        font-size: 10px;
+    }
+
+    .flex-4344 {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .flex-4343 {
+        flex-direction: row;
+    }
+
+    .cart-bottom-mob-form {
+        margin-top: 20px;
+    }
+
+    .cart-bottom-mob-top {
+        padding-bottom: 20px;
+    }
+
+    .product-item, .product-item > :first-child  {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-item-img {
+        min-height: 110px;
+        min-width: 160px;
+    }
+
+    .product-item-block {
+        flex-direction: row;
+        gap: 40px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .cart-top button p {
+        font-size: 14px;
+    }
+
+    .button-4 {
+        padding: 11px 0 9px 0;
+    }
+
+    .button-3 {
+        padding: 11px 0 9px 0;
+    }
+
+    .cart {
+        padding: 0 15px 120px 15px;
+    }
+
+    .cart .breadcrumps {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .cart-center label  {
+        font-size: 16px;
+    }
+
+    .cart-center p  {
+        font-size: 10px;
+    }
+
+    .custom-checkbox span {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .flex-4343, .flex-25678 {
+        flex-direction: column;
+    }
+
+    .flex-25678 {
+        align-items: flex-start;
+    }
+
+    .flex-25678 button {
+        width: 100%;
+    }
+}
+
+
