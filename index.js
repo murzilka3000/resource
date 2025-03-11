@@ -99,3 +99,35 @@ document.addEventListener("DOMContentLoaded", () => {
         cartBottomMob.style.display = cartBottomMob.style.display === "none" ? "block" : "none";
     });
 });
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("popup");
+    const openButtons = document.querySelectorAll(".popup-open");
+    const closeButton = document.querySelector(".popup-close");
+
+    // Открытие попапа
+    openButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            popup.style.display = "flex";
+        });
+    });
+
+    // Закрытие попапа
+    closeButton.addEventListener("click", () => {
+        popup.style.display = "none";
+    });
+
+    // Закрытие при клике вне окна
+    popup.addEventListener("click", (event) => {
+        if (event.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+});

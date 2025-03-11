@@ -47,7 +47,7 @@
                             <p>Пн - Пт 8:00 - 21:00</p>
                         </div>
                         <div>
-                            <button>Заказать обратный звонок</button>
+                            <button class="popup-open">Заказать обратный звонок</button>
                         </div>
                     </div>
                     <div class="header-top-bottom">
@@ -958,13 +958,67 @@
                     <div class="footer-end">
                         <a href="tel:8 499 962 69 99">8 499 962 69 99</a>
                         <p>Звонок по РФ бесплатный</p>
-                        <button>Заказать обратный звонок</button>
+                        <button class="popup-open">Заказать обратный звонок</button>
                         <a href="">Политика конфиденциальности</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="popup-close">
+                <img src="./images/close.svg" alt="">
+            </span>
+            <h3>
+                <span>Оставьте заявку</span> <br>
+                на подбор запчастей <br>
+                и просчёт заказа
+            </h3>
+            <form action="">
+                <div class="popup-flex">
+                    <div>
+                        <label for="">Имя</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">Имя</label>
+                        <input type="text" name="" id="">
+                    </div>
+                </div>
+                <div class="popup-flex">
+                    <div>
+                        <label for="">Имя</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">Имя</label>
+                        <input type="text" name="" id="">
+                    </div>
+                </div>
+                <div class="popup-flex">
+                    <div>
+                        <label for="">Комментарий к запросу</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                    <div></div>
+                </div>
+                <div>
+                    <label class="file" for="file-upload">
+                        Загрузить файл
+                    </label>
+                    <input type="file" id="file-upload" name="file" style="display: none;">
+                </div>
+                <div class="popup-submit">
+                    <button type="submit">Оставить заявку</button>
+                    <p>
+                        Нажимая на кнопку, вы соглашаетесь с 
+                        <a href="">условиями политики конфиденциальности</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="./index.js"></script>
 </body>
 </html>
