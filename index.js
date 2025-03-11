@@ -131,3 +131,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+document.querySelector(".delete-button").addEventListener("click", function () {
+    document.querySelector(".custom-popup").classList.add("active");
+});
+
+document.querySelector(".close-popup").addEventListener("click", function () {
+    document.querySelector(".custom-popup").classList.remove("active");
+});
