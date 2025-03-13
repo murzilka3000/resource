@@ -194,3 +194,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+
+const openList = document.querySelector('.open-list');
+    const mobGrid = document.querySelector('.mob-grid');
+    const arrow = document.querySelector('.arrow23');
+
+    openList.addEventListener('click', function() {
+        // Переключаем видимость элемента .mob-grid
+        if (mobGrid.style.display === 'none' || mobGrid.style.display === '') {
+            mobGrid.style.display = 'grid';
+            arrow.classList.add('rotate');  // Добавляем класс для поворота
+        } else {
+            mobGrid.style.display = 'none';
+            arrow.classList.remove('rotate');  // Убираем класс поворота
+        }
+    });
