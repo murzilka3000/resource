@@ -1852,7 +1852,7 @@ footer {
     }
 
     .advantages {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .advantages-item p {
@@ -2173,11 +2173,12 @@ footer {
 
     .advantages {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
-    .abs-12 {
-        display: none!important;
+    .flex-676 {
+        flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .custom-shape-2 {
@@ -2283,6 +2284,14 @@ footer {
 
 .contacts-page {
     background: #ebebeb;
+    padding-bottom: 120px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .contacts-page {
+        padding-bottom: 60px;
+    }
 }
 
 .breadcrumps {
