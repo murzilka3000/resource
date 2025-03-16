@@ -3804,3 +3804,29 @@ footer {
 
 
 /* mob-menu end */
+
+
+.desk-only {
+    display: flex;
+}
+
+.mob-only {
+    display: none;
+}
+
+@media screen and (max-width: 577px) {
+    .desk-only {
+        display: none!important;
+    }
+
+    .mob-only {
+        display: flex;
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+    .mob-only img {
+        max-width: 40px;
+    }
+    
+}
