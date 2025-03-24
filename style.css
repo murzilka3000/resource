@@ -345,7 +345,7 @@ header {
   
   @keyframes marquee {
     from {
-      transform: translateX(100%);
+      transform: translateX(0%);
     }
     to {
       transform: translateX(-100%);
@@ -377,7 +377,7 @@ header {
     flex: 1;
     min-height: 476px;
     background: #fff;
-    border-radius: 0 0 12px 12px;
+    border-radius: 12px;
 }
 
 .technique-cards-cont-item h4 {
@@ -1018,9 +1018,7 @@ header {
     background: #212121;
     padding: 30px;
     display: flex;
-    clip-path: polygon(25% 0%, 100% 0, 100% 90%, 95% 100%, 0 100%, 0 0);
-
-
+    clip-path: polygon(25% 0%, 100% 0, 100% 81%, 95% 100%, 0 100%, 0 0);
 }
 
 .form-bottom-left > :first-child {
@@ -1091,7 +1089,7 @@ header {
 }
 
 .form-3 form > :not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .message {
@@ -3017,6 +3015,10 @@ footer {
     border-radius: 4px;
     padding: 10px 15px;
     background: #ebebeb;
+    font-weight: 700;
+    font-size: 10px;
+    text-align: center;
+    color: #212121;
 }
 
 .cart-bottom > :not(:last-child) {
@@ -3829,4 +3831,13 @@ footer {
         max-width: 40px;
     }
     
+}
+
+
+.hero-right .form-3 form > :not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.flex-322 > :first-child {
+    margin-bottom: 20px;
 }
