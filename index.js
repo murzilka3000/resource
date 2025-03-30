@@ -211,3 +211,24 @@ const openList = document.querySelector('.open-list');
             arrow.classList.remove('rotate');  // Убираем класс поворота
         }
     });
+
+
+
+
+
+
+
+
+
+    $(document).ready(function() {
+        // Обработчик клика на заголовок блока
+        $('.sidebar-item .item-header').click(function() {
+            // Закрываем все открытые блоки, кроме текущего
+            $('.sidebar-item .item-content').not($(this).next('.item-content')).slideUp();
+            $('.sidebar-item .item-header').not(this).removeClass('active');
+    
+            // Открываем/закрываем текущий блок
+            $(this).next('.item-content').slideToggle();
+            $(this).toggleClass('active'); // Добавляем/удаляем класс active для стилизации стрелки
+        });
+    });
