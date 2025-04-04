@@ -4644,3 +4644,48 @@ footer {
 .seo-catalog-form-block-12 {
     margin-top: 120px;
 }
+
+.seo-catalog-form-block-12, .flex-flex {
+   margin-bottom: 120px;
+}
+
+@media screen and (max-width: 768px) {
+    .h3-12 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .h2-12 {
+        font-size: 32px!important;
+        margin-bottom: 20px!important;
+    }
+
+    .p-12 {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .seo-catalog-form-block-12, .flex-flex {
+        margin: 40px 0;
+    }
+
+    .flex-flex {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .h2-12 {
+        font-size: 27px!important;  
+    }
+
+    .grid-12 {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .grid-12-item {
+        padding: 30px 50px;
+    }
+}
