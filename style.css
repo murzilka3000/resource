@@ -4105,7 +4105,7 @@ footer {
 .seo-catalog-form {
     display: flex;
     gap: 40px;
-    margin: 100px 0;
+    padding: 100px 0;
 }
 
 .seo-catalog-form > :first-child,
@@ -4393,4 +4393,191 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
+}
+
+.catalog {
+    padding: 0 20px;
+}
+
+.catalog-mob {
+    display: none;
+}
+
+.seo-catalog {
+    padding: 0 20px;
+}
+
+.mob-2 {
+    display: none;
+}
+
+@media screen and (max-width: 1180px) {
+    .desktop-1 {
+        display: none;
+    }
+
+    .mob-2 {
+        display: block;
+        border-radius: 0px 0px 12px 0;
+    }
+
+    .seo-catalog-form-button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 1119px) {
+    .seo-catalog-form {
+        flex-direction: column;
+    }
+    .seo-catalog-form > :first-child {
+        padding: 30px 30px 80px 30px;
+    }
+
+    .flex-10193 img {
+        transform: rotate(90deg);
+        margin-bottom: -30px;
+    }
+
+    .flex-10193 {
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .catalog-cont > :first-child {
+        display: none;
+    }
+
+    .catalog-mob {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .catalog-mob button {
+        border-radius: 6px;
+        padding: 13px 23px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        border: none;
+    }
+
+    .catalog-parts-content-grid2-top {
+        min-height: 177px;
+    }
+
+ 
+}
+
+@media screen and (max-width: 787px) {
+    .mob-2 {
+        width: 283px;
+    }
+}
+
+
+@media screen and (max-width: 557px) {
+    .flex-10193 > :last-child {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 513px) {
+    .seo-catalog-form-cont2 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .seo-catalog-form-cont2 {
+        gap: 0px;
+    }
+
+    .seo-catalog-form > :first-child {
+        padding: 30px 30px 110px 30px;
+    }
+
+    .seo-catalog-form > :first-child  {
+        position: relative;
+    }
+
+    .flex-10193 > :first-child {
+        position: absolute;
+        bottom: 60px;
+        right: 20px;
+    }
+
+    .seo-catalog-cont h3 {
+        font-size: 20px;
+    }
+
+
+    .catalog-cont h2 {
+        font-size: 20px;
+        max-width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .seo-catalog-form > :first-child h3 {
+        font-size: 20px;
+    }
+
+    .seo-catalog-form > :first-child p {
+        font-size: 14px;
+    }
+
+    .mob-2 {
+        width: 153px;
+    }
+
+    .seo-catalog-cont {
+        padding: 20px;
+        min-height: 140px;
+    }
+
+    .seo-catalog  {
+        margin-top: 70px;
+    }
+
+    .catalog-cont {
+        padding-bottom: 0px;
+    }
+
+    .seo-catalog-end ul li, .seo-catalog-end p {
+        font-size: 14px;
+    }
+
+    .flex-3321 p {
+        font-size: 12px;
+    }
+
+    .catalog-parts-content-grid2-center h5 {
+        font-size: 16px;
+    }
+
+
+.seo-catalog-end ul {
+    grid-template-columns: 1fr;
+}
+
+
+}
+
+
+@media screen and (max-width: 1180px) {
+    .catalog-cont {
+        padding-bottom: 0px;
+    }
+
+    .seo-catalog {
+        margin-top: 70px;
+    }
+
+    .catalog-mob {
+        margin-bottom: 30px;
+    }
 }
