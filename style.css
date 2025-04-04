@@ -4564,6 +4564,10 @@ footer {
     grid-template-columns: 1fr;
 }
 
+.seo-catalog-form {
+    padding: 70px 0;
+}
+
 
 }
 
