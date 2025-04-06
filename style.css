@@ -422,7 +422,8 @@ header {
 }
 
 .per img {
-    width: 100%;
+    width: 102%;
+    margin-left: -1px;
 }
 
 .technique-cards-cont-item-3 {
