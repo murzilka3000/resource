@@ -5020,3 +5020,17 @@ color: #212121;
     text-decoration: none;
     color: #212121;
 }
+
+
+.rtgvtr232 {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 12;
+}
+
+.rtgvtr232 div {
+    cursor: pointer;
+}
