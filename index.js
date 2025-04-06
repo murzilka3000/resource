@@ -308,3 +308,61 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error("Один или несколько элементов для блока 'О технике' не найдены!");
         }
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const swiperElement = document.querySelector(".swiper-container-companies2");
+    
+        if (swiperElement) { // Проверяем, есть ли такой элемент на странице
+            new Swiper(swiperElement, {
+                loop: true, 
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 8000,
+                },
+                slidesPerView: 4, 
+                spaceBetween: 40,
+                breakpoints: {
+                    1200: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                    990: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    0: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,   
+                    }
+                },
+            });
+        }
+    });
+    
