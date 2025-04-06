@@ -197,20 +197,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-const openList = document.querySelector('.open-list');
+document.addEventListener('DOMContentLoaded', () => {
+    const openList = document.querySelector('.open-list');
     const mobGrid = document.querySelector('.mob-grid');
     const arrow = document.querySelector('.arrow23');
-
-    openList.addEventListener('click', function() {
-        // Переключаем видимость элемента .mob-grid
-        if (mobGrid.style.display === 'none' || mobGrid.style.display === '') {
-            mobGrid.style.display = 'grid';
-            arrow.classList.add('rotate');  // Добавляем класс для поворота
-        } else {
-            mobGrid.style.display = 'none';
-            arrow.classList.remove('rotate');  // Убираем класс поворота
-        }
-    });
+  
+    if (openList && mobGrid && arrow) {
+      openList.addEventListener('click', function () {
+        const isHidden = mobGrid.style.display === 'none' || mobGrid.style.display === '';
+        mobGrid.style.display = isHidden ? 'grid' : 'none';
+        arrow.classList.toggle('rotate', isHidden);
+      });
+    }
+  });
 
 
 
@@ -220,15 +219,92 @@ const openList = document.querySelector('.open-list');
 
 
 
-    $(document).ready(function() {
-        // Обработчик клика на заголовок блока
-        $('.sidebar-item .item-header').click(function() {
-            // Закрываем все открытые блоки, кроме текущего
-            $('.sidebar-item .item-content').not($(this).next('.item-content')).slideUp();
-            $('.sidebar-item .item-header').not(this).removeClass('active');
+  $(document).ready(function() {
+    const $headers = $('.sidebar-item .item-header');
+  
+    if ($headers.length) {
+      $headers.click(function() {
+        const $clickedHeader = $(this);
+        const $clickedContent = $clickedHeader.next('.item-content');
+  
+        $('.sidebar-item .item-content').not($clickedContent).slideUp();
+        $headers.not($clickedHeader).removeClass('active');
+  
+        $clickedContent.slideToggle();
+        $clickedHeader.toggleClass('active');
+      });
+    }
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+    const thumbsSwiper = new Swiper('.thumbs2', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        watchSlidesProgress: true,
+      });
     
-            // Открываем/закрываем текущий блок
-            $(this).next('.item-content').slideToggle();
-            $(this).toggleClass('active'); // Добавляем/удаляем класс active для стилизации стрелки
-        });
+      const mainSwiper = new Swiper('.main-swiper2', {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: '.swiper-button-next91',
+          prevEl: '.swiper-button-prev91',
+        },
+        thumbs: {
+          swiper: thumbsSwiper,
+        },
+        on: {
+          slideChange: function () {
+            const total = this.slides.length;
+            const current = this.realIndex + 1;
+            document.querySelector('.slide-count').textContent = `${current}/${total}`;
+          }
+        }
+      });
+
+
+
+
+
+
+      document.addEventListener('DOMContentLoaded', () => {
+        // Находим нужные элементы по их ID
+        const techBlock = document.getElementById('tech-block');
+        const expandBtn = document.getElementById('expand-btn');
+        const expandText = document.getElementById('expand-text');
+        const expandIcon = document.getElementById('expand-icon'); // Хотя иконка меняется через CSS transform, можно менять и сам символ
+    
+        // Проверяем, что все элементы найдены
+        if (techBlock && expandBtn && expandText && expandIcon) {
+            // Добавляем обработчик события клика на кнопку
+            expandBtn.addEventListener('click', () => {
+                // Переключаем класс is-expanded на основном блоке
+                techBlock.classList.toggle('is-expanded');
+    
+                // Проверяем, есть ли теперь класс is-expanded (т.е. блок развернут?)
+                if (techBlock.classList.contains('is-expanded')) {
+                    // Блок развернут
+                    expandText.textContent = 'Свернуть';
+                    // Можно изменить иконку на стрелку вверх, если не используется transform: rotate
+                    // expandIcon.innerHTML = '↟'; // Стрелка вверх (⇑)
+                } else {
+                    // Блок свернут
+                    expandText.textContent = 'Развернуть';
+                    // Возвращаем иконку стрелки вниз, если не используется transform: rotate
+                    // expandIcon.innerHTML = '↡'; // Стрелка вниз (⇓)
+                }
+            });
+        } else {
+            console.error("Один или несколько элементов для блока 'О технике' не найдены!");
+        }
     });
