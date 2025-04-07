@@ -357,8 +357,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         slidesPerView: 3,
                         spaceBetween: 10,
                     },
+
+                    500: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
                     0: {
-                        slidesPerView: 3,
+                        slidesPerView: 1,
                         spaceBetween: 10,   
                     }
                 },
@@ -366,3 +371,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
+
+
+
+
+
+
+    const toggleBtn = document.querySelector('.open-accordionnn');
+    const accordion = document.querySelector('.accordionnn');
+  
+    toggleBtn.addEventListener('click', () => {
+      const isVisible = accordion.style.display === 'block';
+  
+      accordion.style.display = isVisible ? 'none' : 'block';
+    });
+  
+    document.querySelectorAll('.headernn').forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+        item.classList.toggle('active');
+  
+        document.querySelectorAll('.itemnn').forEach(i => {
+          if (i !== item) {
+            i.classList.remove('active');
+          }
+        });
+      });
+    });

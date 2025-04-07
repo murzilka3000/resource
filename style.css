@@ -421,6 +421,10 @@ header {
     padding: 0 30px;
 }
 
+.per {
+    overflow: hidden;
+}
+
 .per img {
     width: 102%;
     margin-left: -1px;
@@ -4885,7 +4889,7 @@ color: #fff;
 
 
 .hero-prodict {
-    padding-bottom: 120px;
+    padding: 0 20px 120px 20px;
 }
 
 
@@ -5006,6 +5010,10 @@ color: #212121;
     align-items: flex-end;
 }
 
+.breadcrumbs {
+    padding: 0 20px;
+}
+
 
 .breadcrumbs-cont {
     display: flex;
@@ -5035,3 +5043,139 @@ color: #212121;
 .rtgvtr232 div {
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+.accordionnn {
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    display: none; /* Скрыт по умолчанию */
+  }
+
+
+
+  .headernn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+  }
+
+.headernn span  {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
+}
+
+  .plusnn {
+    font-size: 44px;
+    transition: transform 0.3s ease;
+    background: #212121;
+    border-radius: 4px;
+    color: #fff!important;
+    padding: 4px 10px 2px 10px;
+  }
+
+  .contentnn {
+    display: none;
+    padding: 15px;
+  }
+
+  .contentnn img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .active .plusnn {
+    transform: rotate(180deg);
+  }
+
+  .active .contentnn {
+    display: block;
+  }
+
+
+
+  .vtgbrybhrtedrfe {
+    padding: 0 20px;
+  }
+
+
+  .trbvtbhtryh322, .trbvtbhtryh, .cfvgtbnhjm1111 {
+    padding: 0 20px;
+  }
+
+
+
+  @media screen and (max-width: 1186px) {
+    .hero-prodict .swiper {
+        width: 600px;
+    }
+
+    .hero-prodict-cont {
+        gap: 20px;
+    }
+  }
+
+
+  @media screen and (max-width: 1072px) {
+    .hero-prodict-cont {
+        flex-direction: column;
+    }
+
+    .hero-prodict .swiper {
+        width: 100%;
+    }
+  }
+
+
+  @media screen and (max-width: 733px) {
+    .hero-prodict {
+        padding: 0 20px 60px 20px;
+    }
+    .tech-info-block {
+        padding-bottom: 60px;
+    }
+
+    .trbvtbhtryh {
+        margin-top: 60px;
+    }
+
+    .seo-catalog-form {
+        display: flex
+    ;
+        gap: 40px;
+        padding: 60px 0;
+    }
+
+    .block34343434343-2 {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .block34343434343-1 {
+        margin-bottom: 0;
+    }
+
+    .block34343434343 h3, .tech-info-block h2, .title-133212  {
+        font-size: 20px;
+    }
+
+    .breadcrumbs-cont {
+        font-size: 11px;
+        gap: 5px;
+
+    }
+  }
